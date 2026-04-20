@@ -18,7 +18,7 @@ It features a React frontend for a dynamic user interface and a Node.js + Expres
 
 # Tech Stack
 
-- Frontend: React (hosted on GitHub Pages)
+- Frontend: HTML  CSS JavaScript (hosted on GitHub Pages)
 - Backend: Node.js + Express
 - Database: MySQL
 - API: OMDb API (https://www.omdbapi.com/)
@@ -30,6 +30,26 @@ It features a React frontend for a dynamic user interface and a Node.js + Expres
 - MySQL is connected to Visual Studio for backend data management.
  - OMDb API key is securely stored in a .env file.
 
+Project Structure 
+
+Movie-Match/
+│
+├── public/               # Frontend files
+│   ├── index.html
+│   ├── compare.html
+│   ├── results.html
+│   ├── login.html
+│   ├── register.html
+│   ├── profile.html
+│   ├── lobby.html
+│   ├── style.css
+│   ├── script.js
+│   └── movie.js
+│
+├── server.js             # Express backend
+├── package.json
+├── .env.example
+└── README.md
 
 # Installation Instructions
 
@@ -77,14 +97,17 @@ npm start
 5. Movie data is saved in MySQL for future comparisons.
 
 
-# Project Structure
+# Deployment
 
-CIT480/
-├── backend/           # Express backend
-├── frontend/          # React frontend
-├── .env               # Environment variables (OMDb API key, DB credentials)
-├── package.json       # Backend dependencies
-└── README.md          # Project documentation
+This project supports multiple environments:
+
+Development: Local .env
+Staging: Separate database and API instance
+Production: Secure environment variables + hosted backend/frontend
+Suggested Hosting
+Frontend: Netlify or Vercel
+Backend: Render or Railway
+Database: Hosted MySQL (Railway, PlanetScale, etc.)
 
 
 
